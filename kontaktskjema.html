@@ -19,16 +19,32 @@
     <article class="hovedinnhold">
         <h2>HTML Forms</h2>
 
-        <form action="/action_page.php">
+        <form class="contact_form" action="https://kark.hin.no/internett/php/eksempler/DisplayParameters.php" method="post" name="contact_form">
             First name:<br>
-            <input type="text" name="firstname" value="Mickey">
+            <input type="text" name="name" placeholder="Anders Andersen" size="23" required>
             <br>
-            Last name:<br>
-            <input type="text" name="lastname" value="Mouse">
+            Email:<br>
+            <input type="email" name="email" placeholder="anders@andersen.no" size="23" required>
+            <br>
+            Birthdate:<br>
+            <input type="date" name="birthdate" required>
+            <br>
+            Website:<br>
+            <input type="url" name="wensite" placeholder="http://www.andersen.no/anders" size="23"  required>
+            <br>
+            Message:<br>
+            <input type="textarea" name="messagebox" size="23"  required>
+            <br>
+            Velg klasse:<br>
+            <select name="Klasse" required>
+                <option value="1.klasse">1.klasse</option>
+                <option value="2.klasse">2.klasse</option>
+                <option value="3.klasse">3.klasse</option>
+                <option value="4.klasse">4.klasse</option>
+            </select>
             <br><br>
             <input type="submit" value="Submit">
         </form>
-
     </article>
     <footer>
         <p>Jonas Sætre 2019</p>
