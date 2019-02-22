@@ -1,5 +1,6 @@
+
 html, body {
-    background-color: #99D9EA;
+    background-color: #54b7f0;
     margin: 0;
     height: 100%;
     overflow: hidden;
@@ -10,7 +11,7 @@ em {
 .mainpage {
     margin: auto;
     width: 80%;
-    background-color: white;
+    background-color: black;
     align-content: center;
     height: 1080px;
     font-family: 'Railway', sans-serif;
@@ -43,9 +44,6 @@ footer {
     -1px 1px 0 #000,
     1px 1px 0 #000;
 }
-.generelt {
-
-}
 
 .banansorter{
     text-align: left;
@@ -54,7 +52,7 @@ footer {
     width: 50%;
 }
 .næringsinnhold{
-   right: 5%;
+    right: 5%;
 }
 .hovedinnholdparagraf {
     position: absolute;
@@ -67,13 +65,13 @@ footer {
 
 }
 /* Navbar background */
-.TopNav {
+.topnav {
     background-color: #333;
     overflow: hidden;
 }
 
 /* Styling for the navbar */
-.TopNav a {
+.topnav a {
     float: left;
     display: block;
     color: white;
@@ -84,19 +82,19 @@ footer {
 }
 
 /* Changes the color of the button upon hover */
-.TopNav a:hover {
+.topnav a:hover {
     background-color: white;
     color: black;
 }
 
 /* Removes the hover effect above to keep it a fake button.*/
-.TopNav a#logo:hover {
+.topnav a#logo:hover {
     background-color: #333;
     color: white;
 }
 
 /* Hides the hamburger icon for the menu when the screen is wide enough for it not to be needed. */
-.TopNav .icon {
+.topnav .icon {
     display: none;
 }
 
@@ -105,22 +103,22 @@ footer {
     Also enables the "hamburger" icon which contains the new navbar in a on-click menu.
 */
 @media screen and (max-width: 825px) {
-    .TopNav a:not(:first-child) {
+    .topnav a:not(:first-child) {
         display: none;
     }
-    .TopNav a.icon {
+    .topnav a.icon {
         float: right;
         display: block;
     }
-    .TopNav.responsive {
+    .topnav.responsive {
         position: relative;
     }
-    .TopNav.responsive a.icon {
+    .topnav.responsive a.icon {
         position: absolute;
         right: 0;
         top: 0;
     }
-    .TopNav.responsive a {
+    .topnav.responsive a {
         float: none;
         display: block;
         text-align: left;
