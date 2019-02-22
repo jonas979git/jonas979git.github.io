@@ -1,31 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8"/>
-    <link rel="stylesheet" type="text/css" href="stilark.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="stilark.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="main.js"></script>
     <title>Banan</title>
 </head>
 
     <body>
     <section class="mainpage">
         <header>
-            <h1>Banan</h1>
+            <nav class="TopNav" id="MyTopNav">
+                <a href="#" id="logo">Bananer</a>
+                <a href="index.html" class="active">Forside</a>
+                <a href="https://no.wikipedia.org/wiki/Bananer">Wikipedia</a>
+                <a href="kontaktskjema.html">Kontaktskjema</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
         </header>
-        <nav>
-            <a href="https://no.wikipedia.org/wiki/Bananer">Wikipedia</a>
-            <a href="kontaktskjema.html">Kontaktskjema</a>
-        </nav>
         <article class="hovedinnhold">
-            <h2>Om</h2>
+            <img id="rounded-image" src="img/banan.gif" alt="Banan" height="180" width="200" />
+            <section class="generelt">
+            <h2 class="tittel">Generelt om bananer</h2>
             <p>Banan er en avlang frukt som opprinnelig kommer fra Sørøst-Asia og som vokser på bananplanter.
             Denne gamle kulturplanten er en stor urt,som minner om en palme.
             Bananer blir i dag dyrket i det tropiske beltet langs ekvator både i Amerika, Asia og Afrika.
             Det finnes ulike typer bananplanter som alle hører til slekten Musa.
             </p>
-            <h2>Banansorter</h2>
+            </section>
+            <div class="banansorter">
+            <h2 class="tittel">Banansorter</h2>
             <p>
-                <ol>
+                <ol style="list-style-type: none; display: inline-block;">
                     <li>Kokebanan</li>
                         <ul>
                             <li>Også kalt melbanan</li>
@@ -37,10 +49,11 @@
                     <li>Rød banan</li>
                 </ol>
             </p>
+            </div>
+            <div class="næringsinnhold">
             <h2>Næringsprofil</h2>
-            <p>
-            Per 100 gram:
-                <ul>
+                <ul style="list-style-type: none; display: inline-block;">
+                Per 100 gram:
                     <li>Energi: 89 kcal</li>
                     <li>Protein: 1,09 g</li>
                     <li>Karbohydrat: 22,84 g</li>
@@ -51,11 +64,10 @@
                     <li>Kostfiber: 2,6 g</li>
                     <li>Stivelse: 5,38 g</li>
                 </ul>
-            </p>
-            <img src="img/banan.gif" alt="Banan" width="50%" />
+            </div>
         </article>
-        <footer>
-            <p>Jonas Sætre 2019</p>
+        <footer class="footer_class">
+            <p>BananasInPyjamas 2019</p>
         </footer>
     </section>
     </body>
