@@ -12,15 +12,16 @@
     $etternavn = "";
     $faar = "";
 
-    if ( isset($_POST['submit']) && !empty($_POST['submit']) ) {   //false f�rste gang
+    if ( isset($_POST['submit'])  ) {   //false f�rste gang
         if (is_numeric($_POST['fAar'])) {
             $forNavn = htmlspecialchars($_POST['forNavn']);
             $etterNavn = htmlspecialchars($_POST['etterNavn']);
             $fAar = ($_POST['fAar']);
             $aarDiff = date('Y') - $fAar;
             echo "<h3>" . $forNavn . ", " . $etterNavn . "</h3>";
-            echo "<p>Din alder er: " . $aarDiff . "år" . "</p>";
+            echo "<p class='alder'>Din alder er: " . $aarDiff . "år" . "</p>";
             echo "<p>Du er registrert " . date('H:i, jS F Y') . "</p>";
+
             $validate = true;
         } else {
             print("Årstall må være numerisk");
