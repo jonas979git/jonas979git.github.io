@@ -19,12 +19,11 @@
             $fAar = ($_POST['fAar']);
             $aarDiff = date('Y') - $fAar;
             echo "<h3>" . $forNavn . ", " . $etterNavn . "</h3>";
-            echo "<p class='alder'>Din alder er: " . $aarDiff . "år" . "</p>";
+            echo "<p>Din alder er: " . $aarDiff . "år" . "</p>";
             echo "<p>Du er registrert " . date('H:i, jS F Y') . "</p>";
-
             $validate = true;
         } else {
-            print("Årstall må være numerisk");
+            echo "<p>Årstall må være numerisk</p>";
             $validate = false;
             $fornavn = $_POST['forNavn'];
             $etternavn = $_POST['etterNavn'];
